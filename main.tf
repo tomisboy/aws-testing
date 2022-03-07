@@ -1,7 +1,11 @@
 resource "aws_vpc" "prod-vpc" {
   cidr_block = "12.0.0.0/16"
   tags = {
+<<<<<<< HEAD
     Name = "1111dev-1"
+=======
+    Name = "int-1"
+>>>>>>> c0136ab9b936402a34de2e94919d05284216672a
   }
 }
 
