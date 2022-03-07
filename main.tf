@@ -12,12 +12,3 @@ resource "aws_subnet" "subnet-1" {
     Name = "abc"
   }
 }
-
-
-resource "aws_subnet" "subnet-2" {
-  vpc_id            = aws_vpc.prod-vpc.id
-  cidr_block        = "10.0.2.0/24"
-  tags = {
-    Name = "abc1234"
-  }
-}
