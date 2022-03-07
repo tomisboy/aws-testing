@@ -15,6 +15,9 @@ jobs:
     - name: Checkout Repo
       uses: actions/checkout@v1
 
+    - name: Setup Terraform
+      uses: hashicorp/setup-terraform@v1
+
     - name: Terraform Init
       id: init
       run: terraform init
@@ -27,7 +30,7 @@ jobs:
       id: validate
       run: terraform validate -no-color
 
-      
+
       
     - name: Terraform Plan
       id: plan
