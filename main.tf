@@ -1,7 +1,7 @@
 resource "aws_vpc" "prod-vpc" {
   cidr_block = "12.0.0.0/16"
   tags = {
-    Name = "1111dev-1"
+    Name = "new-subent"
   }
 }
 
